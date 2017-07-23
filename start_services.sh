@@ -1,4 +1,4 @@
-mkdir 'logs'>null 2>null
+mkdir 'logs'
 
 echo "start eureka servers..."
 mvn spring-boot:run -f eureka-server -Dspring.profiles.active=eureka1 >>./logs/eureka1.log 2>&1 &

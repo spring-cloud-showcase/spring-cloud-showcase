@@ -18,7 +18,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/destinyliu/spring-cloud-config-repo
+          uri: https://git.oschina.net/destinyshine/spring-cloud-config-repo.git
           basedir: target/config
 
 ---
