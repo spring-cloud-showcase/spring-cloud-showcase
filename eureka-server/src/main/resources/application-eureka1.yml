@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: eureka-server
+
+server:
+  port: 8761
+
+eureka:
+  instance:
+    hostname: enreka-host1
+  client:
+    service-url:
+      default-zone: http://enreka-host2:8762/eureka/

@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: api-gateway
+
+server:
+  port: 5555
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+zuul:
+  ignoredServices: '*'
+  routes:
+    commodity-api:
+      serviceId: commodity-service
+      path: /commodities/**
+      stripPrefix: false

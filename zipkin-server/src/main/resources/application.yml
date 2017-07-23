@@ -1,0 +1,13 @@
+server.port: 0
+
+spring.datasource:
+  schema: classpath:/zipkin-mysql.sql
+  url: jdbc:mysql://127.0.0.1:3306/scstore
+  username: root
+  password: root
+  initialize: true
+  continue-on-error: true
+
+
+spring.sleuth.enabled: false
+zipkin.storage.type: mysql
